@@ -1,0 +1,32 @@
+.checkbox {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  appearance: none; /* Убираем стандартный вид чекбокса */
+  border: 2px solid var(--special-color);
+  border-radius: 50%; /* Делаем чекбокс круглым */
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-color: transparent; /* Без заливки */
+}
+
+.checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 8px;
+  height: 14px;
+  border: solid var(--special-color); /* Зеленая галочка */
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.checkbox:hover {
+  border-color: var(--special-color); /* Более темная граница при наведении */
+}
+
+.checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(0, 123, 255, 0.5);
+}

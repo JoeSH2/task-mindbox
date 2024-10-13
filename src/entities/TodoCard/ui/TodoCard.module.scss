@@ -1,0 +1,38 @@
+.card {
+  padding: 1rem;
+  background-color: var(--main-color);
+  border-radius: var(--border-radius-L);
+  box-shadow: var(--box-shadow);
+  gap: 0.5rem;
+  animation: ani 0.3s forwards;
+}
+.cardInfo {
+  gap: 0.5rem;
+}
+.title {
+  transition: all 0.2s ease-in-out;
+}
+.active {
+  color: var(--text-secondary-color);
+  text-decoration: line-through solid var(--text-secondary-color);
+}
+.deleteBtn {
+  text-transform: lowercase;
+  padding: 0.3rem 0.6rem;
+  background-color: var(--error-color);
+  border-radius: var(--border-radius-M);
+
+  &:hover {
+    background-color: var(--error-hover-color);
+  }
+}
+@keyframes ani {
+  0% {
+    filter: blur(6px);
+    transform: scale(0.8);
+  }
+  100% {
+    filter: none;
+    transform: scale(1);
+  }
+}

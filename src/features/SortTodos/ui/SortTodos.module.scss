@@ -1,0 +1,36 @@
+.sorting {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.toggleBtn {
+  border-radius: var(--border-radius-S);
+  padding: 0.3rem 0.8rem;
+}
+.activeBtn {
+  background-color: var(--active-color);
+
+  &:hover {
+    background-color: var(--active-color);
+  }
+}
+@media (max-width: 720px) {
+  .sorting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+  .toggleBtn {
+    &:nth-child(1) {
+      grid-column: 1 / span 2;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 100%;
+      grid-column: auto;
+    }
+  }
+}

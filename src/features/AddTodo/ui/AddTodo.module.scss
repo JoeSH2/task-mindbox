@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+
+  @media (max-width: 720px) {
+    flex-wrap: wrap;
+
+    .submitBtn {
+      width: 100%;
+    }
+  }
+}
+.todoName {
+  flex: 1 1 auto;
+}

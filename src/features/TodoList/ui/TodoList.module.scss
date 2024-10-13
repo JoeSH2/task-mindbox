@@ -1,0 +1,20 @@
+.cardList {
+  gap: 0.6rem;
+  background-color: var(--main-color);
+  border-radius: var(--border-radius-L);
+  box-shadow: var(--box-shadow);
+
+  height: 350px;
+  overflow-y: scroll;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--active-color) var(--main-color);
+}
+.empty {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: var(--font-XL);
+  color: var(--text-secondary-color);
+}

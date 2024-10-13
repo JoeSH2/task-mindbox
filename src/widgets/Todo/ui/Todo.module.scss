@@ -1,0 +1,26 @@
+.Todo {
+  background-color: var(--secondary-color);
+  padding: 4rem;
+  border-radius: var(--border-radius-XL);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-LOGO);
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    color: var(--special-hover-color);
+  }
+
+  @media (max-width: 720px) {
+    padding: 1rem;
+    width: 300px;
+    font-size: var(--font-M-mobile);
+  }
+}
